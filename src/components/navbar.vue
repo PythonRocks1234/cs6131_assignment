@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-light transparent fullwidth">
       <router-link class="navbar-brand nav-link-noline moveup2 forcelinkcolour" to="/">
-        <img src="/src/assets/favicon.png" alt="logo" style="height: 5vh"> CFD
+        <img src="/src/assets/favicon.png" alt="logo" style="height: 5vh"> HMS
       </router-link>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">

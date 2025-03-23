@@ -3,6 +3,7 @@
 import {Popover} from "bootstrap";
 import {onMounted} from "vue";
 import Navbar from "../../components/navbar.vue";
+import {useRouter} from "vue-router";
 
 onMounted(() => {
   document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -76,11 +77,15 @@ export default defineComponent( {
 
     <div class="maincontainer">
       <div class="background-filter"></div>
-      <div class="pagetitle ovimage"><h1>Chemical Formula Database (CFD)</h1></div>
-      <div class="pagesubtitle ovimage"><h2>Access a vast array of carefully curated chemical data.</h2></div>
+      <div class="verytop ovimage">
+        <h3 v-if="useRouter().currentRoute.value.params['name']!=''">
+          Hi, {{useRouter().currentRoute.value.params["name"]}}<br>
+          &zwnj;</h3></div>
+      <div class="pagetitle ovimage"><h1>Hospital Management System</h1></div>
+      <div class="pagesubtitle ovimage"><h2>Your one stop portal to manage all your medical information.</h2></div>
       <div class="pagesub2title ovimage">
         <h3>
-          <a class="forcelinkcolour" @click="gotosearch()"><u>Start Searching</u></a>
+          <a class="forcelinkcolour" @click="gotosearch()"><u>Find Staff</u></a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a class="forcelinkcolour" @click="learnmorescroll()"><u>Learn More</u></a>
@@ -90,10 +95,10 @@ export default defineComponent( {
 
     <div id="moretext" class="moretext">
       <div class="card center spacing animitem needsfade">
-        <h3>Thousands of chemical formulas available</h3><br>
-        Our database contains thousands of real chemicals, allowing you to take advantage of our comprehensive database.
+        <h3>Many staff available</h3><br>
+        Our database contains many doctors with all kinds of specialties, allowing you to take advantage of our comprehensive database.
       </div>
-      <img src="/src/assets/dataanim.gif" alt="scroll through data gif" class="datagif spacing">
+      <img src="/src/assets/dataanim.png" alt="scroll through data gif" class="datagif spacing">
       <div class="card center spacing animitem needsslide">
         <h3>Use of relational databases</h3><br>
         Relational databases help our system efficiently process all our data, ensuring your experience is also efficient.
@@ -101,9 +106,9 @@ export default defineComponent( {
       <img src="/src/assets/SQLPage_logo.png" alt="database logo" class="datagif spacing">
       <div class="card center spacing animitem needsslide">
         <h3>Many search parameters</h3>
-        Chemicals are searchable by many parameters, allowing you to find the chemical you want.
+        Hospital staff are searchable by many parameters, allowing you to find a suitable doctor.
       </div>
-      <img src="/src/assets/searchanim.gif" alt="search anim gif" class="datagif spacing">
+      <img src="/src/assets/searchanim.png" alt="search anim gif" class="datagif spacing">
       <br><a class="forcelinkcolour" @click="backtotop()"><u>Scroll back to top</u></a>
     </div>
 
@@ -145,6 +150,10 @@ export default defineComponent( {
   width: 100%;
   text-align: center;
   z-index: 100;
+}
+
+.verytop {
+  transform: translateY(-70vh);
 }
 
 .pagetitle {

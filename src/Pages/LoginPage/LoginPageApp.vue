@@ -32,7 +32,7 @@ export default defineComponent( {
           <div class="container">
 
             <div class="zero">Welcome back!<br><br></div>
-            <img class="one" src="/src/assets/collage.png" alt="collage of crystals">
+            <img class="one" src="/src/assets/hospital.jpg" alt="hospital software">
             <div class="three">
               <div class="row">
                 <div class="col-sm">

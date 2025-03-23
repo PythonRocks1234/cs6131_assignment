@@ -9,12 +9,12 @@ import LoginPageApp from "./Pages/LoginPage/LoginPageApp.vue";
 import RegisterPageApp from "./Pages/RegisterPage/RegisterPageApp.vue";
 
 const routes = [
-    { path: '/', component: FrontPageApp },
     { path: '/browse/:query?', component: BrowsePageApp },
     { path: '/references', component: ReferencesPageApp },
     { path: '/search', component: SearchPageApp },
     { path: '/register', component: RegisterPageApp },
     { path: '/login', component: LoginPageApp },
+    { path: '/:name?', component: FrontPageApp },
 ]
 
 const router = createRouter({

@@ -74,7 +74,7 @@ export default defineComponent( {
         </header>
 
         <div class="pad">
-          Place all information you know about the compound below.<br>
+          Place all information you know about the staff below.<br>
           More options coming soon.
           <br><br>
 
@@ -94,52 +94,52 @@ export default defineComponent( {
             <div>
               <hr>
               <div style="position:relative;top:-30px;">
-                <p class="center centeronhr">Chemical</p>
+                <p class="center centeronhr">Staff</p>
               </div>
             </div>
             <div class="row">
               <div class="col-sm"></div>
               <div class="col-sm rightalign">
-                Chemical name
+                Staff name
               </div>
               <div class="col-sm">
-                <input id="queryname" placeholder="eg. sodium chloride">
+                <input id="queryname" placeholder="eg. Dr Gregory House">
               </div>
               <div class="col-sm"></div>
             </div>
             <div class="row">
               <div class="col-sm"></div>
               <div class="col-sm rightalign">
-                Chemical formula (alphabetical order)
+                Contact information
               </div>
               <div class="col-sm">
-                <input id="queryformula" placeholder="eg. ClNa">
+                <input id="queryformula" placeholder="eg. 84475659">
               </div>
               <div class="col-sm"></div>
             </div>
             <div>
               <hr>
               <div style="position:relative;top:-30px;">
-                <p class="center centeronhr">Elemental</p>
+                <p class="center centeronhr">Facility</p>
               </div>
             </div>
             <div class="row">
               <div class="col-sm"></div>
               <div class="col-sm rightalign">
-                Elements included (separate by ,)
+                Facility
               </div>
               <div class="col-sm">
-                <input id="queryeleminc" placeholder="eg. Cl,Na">
+                <input id="queryeleminc" placeholder="eg. Dialysis">
               </div>
               <div class="col-sm"></div>
             </div>
             <div class="row">
               <div class="col-sm"></div>
               <div class="col-sm rightalign">
-                Elements excluded (separate by ,)
+                Specialty
               </div>
               <div class="col-sm">
-                <input id="queryelemexc" placeholder="eg. F,Li">
+                <input id="queryelemexc" placeholder="eg. colorectal surgery">
               </div>
               <div class="col-sm"></div>
             </div>

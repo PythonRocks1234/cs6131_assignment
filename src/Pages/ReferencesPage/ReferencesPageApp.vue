@@ -19,24 +19,18 @@ import Navbar from "../../components/navbar.vue";
 
           <div class="pad one">
             <p class="refboxtext card">
-              Data is sourced from the Crystallography Open Database,<br>
-              an open-access database of crystal structures of various compounds.
-            <br>
-            All data in the Crystallography Open Database has been placed into the public domain.
-              <br>
-            Access the main database here:<br>
-              <a href="https://www.crystallography.net/cod/index.php">https://www.crystallography.net/cod/index.php</a>
+              Most data is taken from fictional TV show House M.D.<br>
             More data sources coming soon.
             </p>
           </div>
 
           <img class="right two"
-               src="/src/assets/cod-blue-yellow.svg"
-               alt="Crystallography Open Database logo">
+               src="/src/assets/HouseLogo.png"
+               alt="House MD TV show logo">
 
           <div class="four">
             <img src="/src/assets/noai.png"
-               alt="No AI image" style="width: 25vw; border-radius: 10px">
+               alt="No AI image" style="border-radius: 10px">
           </div>
 
           <p class="card refboxtext three">
@@ -45,11 +39,8 @@ import Navbar from "../../components/navbar.vue";
           </p>
 
           <p class="card refboxtext five right">Image credits:
-            <a href="https://www.amazon.com/Glass-Narrow-Erlenmeyer-Borosilicate-Graduated/dp/B006UKI8I0">
-              https://www.amazon.com/Glass-Narrow-Erlenmeyer-Borosilicate-Graduated
-            </a>
-            <a href="https://www.pinterest.com/pin/633389135072183950/">
-              https://www.pinterest.com/pin/633389135072183950/
+            <a href="https://house.fandom.com/wiki/House,_M.D.">
+              https://house.fandom.com/wiki/House,_M.D.
             </a>
             <a href="https://commons.wikimedia.org/wiki/File:SQLPage_logo.png">
               https://commons.wikimedia.org/wiki/File:SQLPage_logo.png
@@ -100,7 +91,7 @@ import Navbar from "../../components/navbar.vue";
 .four {
   grid-column: 2;
   grid-row: 2;
-  transform: translateX(25px);
+  transform: translateX(20px);
 }
 .five {
   grid-column: 3;
